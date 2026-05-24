@@ -1365,3 +1365,78 @@ footer {
     max-width: 200px;
   }
 }
+
+/* ===== Samakan preview siswa di index.html dengan student.html ===== */
+.students-preview-grid .student-card,
+#students-preview .student-card {
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+  text-align: left !important;
+  padding: 14px !important;
+}
+
+.students-preview-grid .student-card-img,
+#students-preview .student-card-img {
+  width: 60px !important;
+  height: 60px !important;
+  min-width: 60px !important;
+  border-radius: 50% !important;
+  overflow: hidden !important;
+  flex-shrink: 0 !important;
+}
+
+.students-preview-grid .student-card-img img,
+#students-preview .student-card-img img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+}
+
+.students-preview-grid .student-card-content,
+#students-preview .student-card-content {
+  flex: 1 !important;
+  min-width: 0 !important;
+}
+
+.students-preview-grid .student-card h3,
+#students-preview .student-card h3 {
+  margin: 0 0 4px !important;
+  font-size: 1rem !important;
+  white-space: normal !important;
+  word-break: break-word !important;
+}
+
+.students-preview-grid .student-card p,
+#students-preview .student-card p {
+  margin: 0 !important;
+  font-size: 0.85rem !important;
+  white-space: normal !important;
+  word-break: break-word !important;
+}
+
+/* Mobile tetap rapi */
+@media (max-width: 768px) {
+  .students-preview-grid .student-card,
+  #students-preview .student-card {
+    gap: 10px !important;
+    padding: 12px !important;
+  }
+
+  .students-preview-grid .student-card-img,
+  #students-preview .student-card-img {
+    width: 50px !important;
+    height: 50px !important;
+    min-width: 50px !important;
+  }
+
+  .students-preview-grid .student-card h3,
+  #students-preview .student-card h3 {
+    font-size: 0.9rem !important;
+  }
+
+  .students-preview-grid .student-card p,
+  #students-preview .student-card p {
+    font-size: 0.8rem !important;
+  }
+}
