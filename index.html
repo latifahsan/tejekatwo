@@ -405,25 +405,26 @@ document.addEventListener('DOMContentLoaded', () => {
   if (!grid || typeof SISWA_DATA === 'undefined') return;
   SISWA_DATA.slice(0, 10).forEach((siswa, i) => {
     const card = document.createElement('div');
-    card.className = ` reveal delay-${(i%4)+1}`;
+    card.className = `student-card preview-card reveal delay-${(i%4)+1}`;
     card.innerHTML = `
-      ${siswa.foto
-  ? `<img 
-       src="assets/images/siswa/${siswa.foto}" 
-       alt="${siswa.nama}" 
-       class="student-card-img" 
-       loading="lazy"
-       onerror="this.outerHTML='<div class=&quot;student-card-img&quot;><i class=&quot;fas fa-user&quot;></i></div>'"
-     >`
-  : `<div class="student-card-img"><i class="fas fa-user"></i></div>`
-}
-      <div class="student-card-body">
-        <div class="student-card-name">${siswa.nama}</div>
-        <div class="student-card-role">${siswa.jabatan}</div>
-        <a href="https://instagram.com/${siswa.instagram}" target="_blank" rel="noopener" class="student-card-ig">
-          <i class="fab fa-instagram"></i> @${siswa.instagram}
-        </a>
-      </div>`;
+  ${siswa.foto
+    ? `<img 
+         src="assets/images/siswa/${siswa.foto}" 
+         alt="${siswa.nama}" 
+         class="student-card-img" 
+         loading="lazy"
+         onerror="this.outerHTML='<div class=&quot;student-card-img&quot;><i class=&quot;fas fa-user&quot;></i></div>'"
+       >`
+    : `<div class="student-card-img"><i class="fas fa-user"></i></div>`
+  }
+  <div class="student-card-body">
+    <div class="student-card-name">${siswa.nama}</div>
+    <div class="student-card-role">${siswa.jabatan}</div>
+    <a href="https://instagram.com/${siswa.instagram}" target="_blank" rel="noopener" class="student-card-ig">
+      <i class="fab fa-instagram"></i> @${siswa.instagram}
+    </a>
+  </div>
+`;
     grid.appendChild(card);
     setTimeout(() => document.querySelectorAll('.reveal').forEach(el => {
       const io = new IntersectionObserver(entries => entries.forEach(e => e.isIntersecting && e.target.classList.add('visible')), {threshold:0.1});
