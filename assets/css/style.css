@@ -1440,3 +1440,32 @@ footer {
     font-size: 0.8rem !important;
   }
 }
+
+/* Preview siswa index */
+.preview-card {
+  display: flex !important;
+  align-items: center !important;
+  gap: 14px !important;
+  padding: 16px !important;
+  text-align: left !important;
+}
+
+.preview-card .student-card-img {
+  width: 65px !important;
+  height: 65px !important;
+  min-width: 65px !important;
+  border-radius: 50% !important;
+  object-fit: cover !important;
+  flex-shrink: 0 !important;
+}
+
+.preview-card .student-card-body {
+  padding: 0 !important;
+  flex: 1 !important;
+}
+
+.preview-card .student-card-name,
+.preview-card .student-card-role,
+.preview-card .student-card-ig {
+  text-align: left !important;
+}
