@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tejekatwo.vercel.app/sitemap.xml

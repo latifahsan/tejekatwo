@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TEJEKATWO – XII TJKT 2 SMK Ma'arif Kota Mungkid</title>
+  <meta name="description" content="Website resmi kelas XII TJKT 2 SMK Ma'arif Kota Mungkid – Solidarity, Creativity, and Growth Together">
+  <meta name="keywords" content="TEJEKATWO, TJKT, SMK Ma'arif, Kota Mungkid, jaringan komputer, website kelas">
+  <meta name="author" content="TEJEKATWO">
+  <!-- Open Graph -->
+  <meta property="og:title" content="TEJEKATWO – XII TJKT 2 SMK Ma'arif Kota Mungkid">
+  <meta property="og:description" content="Solidarity, Creativity, and Growth Together">
+  <meta property="og:type" content="website">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- Scroll Progress -->
+<div id="scroll-progress"></div>
+
+<!-- Loading Screen -->
+<div id="loading-screen">
+  <div class="loader-logo">TEJEKATWO</div>
+  <div class="loader-bar"><div class="loader-fill"></div></div>
+</div>
+
+<!-- Navbar -->
+<nav id="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-badge">26</div>
+      TEJEKATWO
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">Tentang</a></li>
+      <li><a href="students.html">Siswa</a></li>
+      <li><a href="gallery.html">Galeri</a></li>
+      <li><a href="news.html">Berita</a></li>
+      <li><a href="projects.html">Proyek</a></li>
+      <li><a href="timeline.html">Timeline</a></li>
+      <li><a href="contact.html">Kontak</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button id="theme-toggle" title="Toggle theme"><i class="fas fa-moon"></i></button>
+      <button id="hamburger"><i class="fas fa-bars"></i></button>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile Nav -->
+<div id="mobile-nav">
+  <ul class="mobile-nav-links">
+    <li><a href="index.html">🏠 Home</a></li>
+    <li><a href="about.html">📖 Tentang</a></li>
+    <li><a href="students.html">👥 Siswa</a></li>
+    <li><a href="gallery.html">🖼️ Galeri</a></li>
+    <li><a href="news.html">📰 Berita</a></li>
+    <li><a href="projects.html">💡 Proyek</a></li>
+    <li><a href="timeline.html">📅 Timeline</a></li>
+    <li><a href="contact.html">📍 Kontak</a></li>
+  </ul>
+</div>
+
+<!-- ══ HERO ══ -->
+<section id="home">
+  <div class="hero-bg-mesh"></div>
+  <div class="hero-grid"></div>
+  <div class="container">
+    <div class="hero-content">
+      <!-- Left -->
+      <div>
+        <div class="hero-eyebrow reveal">
+          <i class="fas fa-graduation-cap"></i>
+          SMK Ma'arif Kota Mungkid · TJKT
+        </div>
+        <h1 class="hero-title reveal delay-1">TEJEKA<br><span style="color:#60a5fa">TWO</span></h1>
+        <p class="hero-subtitle reveal delay-2">Kelas XII TJKT 2 – SMK Ma'arif Kota Mungkid</p>
+        <p class="hero-motto reveal delay-3">"Solidarity, Creativity, and Growth Together"</p>
+        <div class="hero-cta reveal delay-4">
+          <a href="about.html" class="btn-primary">
+            <i class="fas fa-compass"></i> Profil Kelas
+          </a>
+          <a href="gallery.html" class="btn-outline">
+            <i class="fas fa-images"></i> Galeri Kegiatan
+          </a>
+          <a href="students.html" class="btn-outline">
+            <i class="fas fa-users"></i> Lihat Siswa
+          </a>
+        </div>
+      </div>
+      <!-- Right – Wali Kelas Card -->
+      <div class="hero-card-col reveal delay-2">
+        <div class="hero-card">
+          <div class="hero-card-img">
+            <img src="assets/images/banners/banner_sambutan.jpg" alt="Banner Sambutan" style="width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none'">
+            <i class="fas fa-school" style="display:none"></i>
+          </div>
+          <div class="hero-card-title">Sambutan Wali Kelas</div>
+          <p class="hero-card-text">
+            "Selamat datang di website TEJEKATWO – XII TJKT 2. Semoga website ini menjadi wadah untuk berbagi informasi, dokumentasi kegiatan, dan mempererat tali silaturahmi antar siswa. Mari bersama-sama membangun masa depan yang cerah di bidang teknologi."
+          </p>
+          <div class="hero-wali">
+            <div class="hero-wali-img" style="overflow:hidden">
+              <img src="assets/images/siswa/eka.png" alt="Bu Eka" style="width:100%;height:100%;object-fit:cover" onerror="this.style.display='none'">
+            </div>
+            <div>
+              <div class="hero-wali-name">Eka Wahyu Nurlaili, S.Pd.</div>
+              <div class="hero-wali-role">Wali Kelas XII TJKT 2</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Stats Strip -->
+<div class="stats-strip">
+  <div class="container">
+    <div class="stats-strip-inner">
+      <div class="stat-item reveal">
+        <div class="stat-num"><span data-target="35" data-suffix="">0</span></div>
+        <div class="stat-label">Siswa Aktif</div>
+      </div>
+      <div class="stat-item reveal delay-1">
+        <div class="stat-num"><span data-target="6" data-suffix="">0</span></div>
+        <div class="stat-label">Kegiatan Sekolah</div>
+      </div>
+      <div class="stat-item reveal delay-2">
+        <div class="stat-num"><span data-target="3" data-suffix="">0</span></div>
+        <div class="stat-label">Proyek Unggulan</div>
+      </div>
+      <div class="stat-item reveal delay-3">
+        <div class="stat-num"><span data-target="2026" data-suffix="">0</span></div>
+        <div class="stat-label">Angkatan</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ BERITA TERBARU ══ -->
+<section class="section" style="background:var(--bg)">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-tag"><i class="fas fa-newspaper"></i> Terkini</div>
+      <h2 class="section-title">Berita & <span>Artikel</span></h2>
+      <p class="section-desc">Update terbaru kegiatan kelas, pengalaman PKL, dan cerita inspiratif dari siswa TEJEKATWO</p>
+    </div>
+    <div class="news-grid">
+      <article class="news-card reveal delay-1">
+        <div class="news-card-header bg-blue">
+          <i class="fas fa-cogs"></i>
+        </div>
+        <div class="news-card-body">
+          <div class="news-meta">
+            <span><i class="fas fa-calendar"></i> 20 Oktober 2025</span>
+            <span><i class="fas fa-user"></i> Admin</span>
+          </div>
+          <h3 class="news-card-title">Website TEJEKATWO Resmi Diluncurkan</h3>
+          <p class="news-card-desc">Website TEJEKATWO sedang dibuat dan akan digunakan sebagai media dokumentasi dan informasi kelas XII TJKT 2.</p>
+          <a href="news.html" class="read-more">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </article>
+      <article class="news-card reveal delay-2">
+        <div class="news-card-header bg-green">
+          <i class="fas fa-briefcase"></i>
+        </div>
+        <div class="news-card-body">
+          <div class="news-meta">
+            <span><i class="fas fa-calendar"></i> 20 Oktober 2025</span>
+            <span><i class="fas fa-user"></i> Admin</span>
+          </div>
+          <h3 class="news-card-title">Persiapan PKL Dimulai</h3>
+          <p class="news-card-desc">Siswa kelas XII TJKT 2 mulai mempersiapkan diri untuk Praktik Kerja Lapangan yang akan segera dimulai.</p>
+          <a href="news.html" class="read-more">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </article>
+      <article class="news-card reveal delay-3">
+        <div class="news-card-header bg-purple">
+          <i class="fas fa-theater-masks"></i>
+        </div>
+        <div class="news-card-body">
+          <div class="news-meta">
+            <span><i class="fas fa-calendar"></i> 20 Oktober 2025</span>
+            <span><i class="fas fa-user"></i> Admin</span>
+          </div>
+          <h3 class="news-card-title">Gelar Karya Drama Doraemon</h3>
+          <p class="news-card-desc">TEJEKATWO sukses menampilkan drama bertema Doraemon dalam acara Gelar Karya, mendapat sambutan meriah.</p>
+          <a href="news.html" class="read-more">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </article>
+    </div>
+    <div style="text-align:center;margin-top:40px" class="reveal">
+      <a href="news.html" class="btn-primary" style="background:var(--primary);color:white;padding:14px 36px;border-radius:12px;font-weight:700;display:inline-flex;align-items:center;gap:8px;transition:all 0.3s">
+        <i class="fas fa-newspaper"></i> Lihat Semua Berita
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ SISWA PREVIEW ══ -->
+<section class="section" style="background:var(--bg-section)">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-tag"><i class="fas fa-users"></i> Keluarga</div>
+      <h2 class="section-title">Warga <span>TEJEKATWO</span></h2>
+      <p class="section-desc">35 siswa berdedikasi yang bersama membangun cerita di XII TJKT 2</p>
+    </div>
+    <!-- Org Preview -->
+    <div class="reveal" style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:40px;margin-bottom:48px">
+      <h3 style="font-family:'Syne',sans-serif;font-size:1.3rem;font-weight:800;text-align:center;margin-bottom:32px">Struktur Pengurus Kelas</h3>
+      <div class="org-chart">
+        <div class="org-row">
+          <span class="org-node org-wali">Eka Wahyu Nurlaili, S.Pd. – Wali Kelas</span>
+        </div>
+        <div class="org-connector"></div>
+        <div class="org-row">
+          <span class="org-node org-ketua">Wildan Surya Anjuba – Ketua</span>
+          <span class="org-node org-wakil" style="background:linear-gradient(135deg,#10b981,#34d399);color:#065f46">Dea Rihadatul Hasna – Wakil</span>
+        </div>
+        <div class="org-connector"></div>
+        <div class="org-row">
+          <span class="org-node org-sekret">Asifa Aprilia – Sekretaris I</span>
+          <span class="org-node org-sekret">Putri Yulita Sari – Sekretaris II</span><p>
+          <span class="org-node org-bendahara">Ana Habib Khoirul M. – Bendahara I</span>
+          <span class="org-node org-bendahara">Isna Nurfadea – Bendahara II</span>
+        </div>
+      </div>
+    </div>
+    <!-- Preview grid - 8 students -->
+    <div class="students-grid" id="preview-students-grid"></div>
+    <div style="text-align:center;margin-top:40px" class="reveal">
+      <a href="students.html" class="btn-primary" style="background:var(--primary);color:white;padding:14px 36px;border-radius:12px;font-weight:700;display:inline-flex;align-items:center;gap:8px;transition:all 0.3s">
+        <i class="fas fa-users"></i> Lihat Semua Siswa
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ GALERI PREVIEW ══ -->
+<section class="section" style="background:var(--bg)">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-tag"><i class="fas fa-images"></i> Momen</div>
+      <h2 class="section-title">Galeri <span>Kegiatan</span></h2>
+      <p class="section-desc">Dokumentasi foto kegiatan dan momen berharga bersama TEJEKATWO</p>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item reveal delay-1" data-category="event">
+        <img src="assets/images/galeri/gerakjalan.jpg" alt="Gerak Jalan Kemerdekaan" loading="lazy">
+        <div class="gallery-overlay">
+          <div class="gallery-caption">
+            <h4>Gerak Jalan Kemerdekaan</h4>
+            <p>Memeriahkan kemerdekaan Indonesia</p>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-item reveal delay-2" data-category="keagamaan">
+        <img src="assets/images/galeri/maulid.jpg" alt="Pengajian Maulid Nabi" loading="lazy">
+        <div class="gallery-overlay">
+          <div class="gallery-caption">
+            <h4>Pengajian Maulid Nabi</h4>
+            <p>Peringatan maulid nabi Muhammad saw. 1445H</p>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-item reveal delay-3" data-category="akademik">
+        <img src="assets/images/galeri/kunjungan.jpg" alt="Kunjungan Industri" loading="lazy">
+        <div class="gallery-overlay">
+          <div class="gallery-caption">
+            <h4>Kunjungan Industri & Wisata</h4>
+            <p>Universitas Amikom Yogyakarta & Jawa Timur</p>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-item reveal delay-1" data-category="event">
+        <img src="assets/images/galeri/hariguru.jpg" alt="Hari Guru 2024" loading="lazy">
+        <div class="gallery-overlay">
+          <div class="gallery-caption">
+            <h4>Hari Guru 2024</h4>
+            <p>Perayaan Hari Guru Nasional</p>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-item reveal delay-2" data-category="seni">
+        <img src="assets/images/galeri/gelarkarya.jpg" alt="Gelar Karya" loading="lazy">
+        <div class="gallery-overlay">
+          <div class="gallery-caption">
+            <h4>Gelar Karya</h4>
+            <p>Drama Doraemon dari Jepang</p>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-item reveal delay-3" data-category="dokumentasi">
+        <img src="assets/images/galeri/fotoalbum.jpg" alt="Foto Yearbook" loading="lazy">
+        <div class="gallery-overlay">
+          <div class="gallery-caption">
+            <h4>Foto Yearbook</h4>
+            <p>Sesi pemotretan buku tahunan</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:40px" class="reveal">
+      <a href="gallery.html" class="btn-primary" style="background:var(--primary);color:white;padding:14px 36px;border-radius:12px;font-weight:700;display:inline-flex;align-items:center;gap:8px;transition:all 0.3s">
+        <i class="fas fa-images"></i> Lihat Semua Galeri
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CTA ══ -->
+<section class="cta-section">
+  <div class="container">
+    <div class="reveal">
+      <div style="font-size:3rem;margin-bottom:16px">🎓</div>
+      <h2 class="cta-title">Bersama Membangun Masa Depan</h2>
+      <p class="cta-desc">Solid, Kreatif, dan Tumbuh Bersama sebagai keluarga besar TEJEKATWO</p>
+      <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+        <a href="http://www.instagram.com/tejekatwo.26" target="_blank" rel="noopener" class="btn-primary">
+          <i class="fab fa-instagram"></i> Follow @tejekatwo.26
+        </a>
+        <a href="contact.html" class="btn-outline">
+          <i class="fas fa-envelope"></i> Hubungi Kami
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FOOTER ══ -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">TEJEKATWO</div>
+        <p class="footer-desc">Kelas XII TJKT 2 SMK Ma'arif Kota Mungkid.<br>Solidarity, Creativity, and Growth Together.</p>
+        <div class="footer-social" style="margin-top:20px">
+          <a href="http://www.instagram.com/tejekatwo.26" target="_blank" class="social-btn bg-pink" title="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="http://www.tiktok.com/@tjkt.2.archive" target="_blank" class="social-btn" style="background:#333" title="TikTok">
+            <i class="fab fa-tiktok"></i>
+          </a>
+          <a href="mailto:tejekatwo@smkmaarif.sch.id" class="social-btn bg-blue" title="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-heading">Halaman</div>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">Tentang</a></li>
+          <li><a href="students.html">Siswa</a></li>
+          <li><a href="gallery.html">Galeri</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-heading">Lainnya</div>
+        <ul class="footer-links">
+          <li><a href="news.html">Berita</a></li>
+          <li><a href="projects.html">Proyek</a></li>
+          <li><a href="timeline.html">Timeline</a></li>
+          <li><a href="contact.html">Kontak</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-heading">Kontak</div>
+        <ul class="footer-links">
+          <li><a href="mailto:tejekatwo@smkmaarif.sch.id">tejekatwo@smkmaarif.sch.id</a></li>
+          <li><a href="#">@tejekatwo.26</a></li>
+          <li><a href="#">@tjkt.2.archive</a></li>
+          <li><a href="#">SMK Ma'arif Kota Mungkid</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr class="footer-divider">
+    <div class="footer-bottom">
+      <span class="footer-copy">© 2025 TEJEKATWO – XII TJKT 2 SMK Ma'arif Kota Mungkid. All rights reserved.</span>
+      <span class="footer-copy">Made with ❤️ by TEJEKATWO</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Lightbox -->
+<div id="lightbox">
+  <button id="lightbox-close"><i class="fas fa-times"></i></button>
+  <img src="" alt="Gallery Image">
+  <div id="lightbox-caption"></div>
+</div>
+
+<!-- Back to Top -->
+<button id="back-to-top" title="Kembali ke atas"><i class="fas fa-arrow-up"></i></button>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/main.js"></script>
+<script>
+// Render preview students (first 8)
+document.addEventListener('DOMContentLoaded', () => {
+  const grid = document.getElementById('preview-students-grid');
+  if (!grid || typeof SISWA_DATA === 'undefined') return;
+  SISWA_DATA.slice(0, 10).forEach((siswa, i) => {
+    const card = document.createElement('div');
+    card.className = ` reveal delay-${(i%4)+1}`;
+    card.innerHTML = `
+      ${siswa.foto
+  ? `<img 
+       src="assets/images/siswa/${siswa.foto}" 
+       alt="${siswa.nama}" 
+       class="student-card-img" 
+       loading="lazy"
+       onerror="this.outerHTML='<div class=&quot;student-card-img&quot;><i class=&quot;fas fa-user&quot;></i></div>'"
+     >`
+  : `<div class="student-card-img"><i class="fas fa-user"></i></div>`
+}
+      <div class="student-card-body">
+        <div class="student-card-name">${siswa.nama}</div>
+        <div class="student-card-role">${siswa.jabatan}</div>
+        <a href="https://instagram.com/${siswa.instagram}" target="_blank" rel="noopener" class="student-card-ig">
+          <i class="fab fa-instagram"></i> @${siswa.instagram}
+        </a>
+      </div>`;
+    grid.appendChild(card);
+    setTimeout(() => document.querySelectorAll('.reveal').forEach(el => {
+      const io = new IntersectionObserver(entries => entries.forEach(e => e.isIntersecting && e.target.classList.add('visible')), {threshold:0.1});
+      io.observe(el);
+    }), 50);
+  });
+});
+</script>
+</body>
+</html>
